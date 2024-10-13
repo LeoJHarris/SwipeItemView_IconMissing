@@ -57,11 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiFont Remove="Resources\Fonts\MaterialDesignIcons.cs" />
+		<MauiFont Remove="Resources\Fonts\MaterialDesignIcons.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\materialdesignicons.ttf" />
+		<None Remove="Resources\Fonts\materialdesignicons.ttf" />
 	</ItemGroup>
 
 	<ItemGroup>
