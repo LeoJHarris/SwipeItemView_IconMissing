@@ -19,18 +19,33 @@ public partial class MainPageViewModel : ObservableObject
                     new SwipeItemView
                     {
                         Padding = new Thickness(24, 0),
-                        Content = new Image
+                        Content = new VerticalStackLayout
                         {
+                            Spacing = 8,
                             VerticalOptions = LayoutOptions.Center,
                             HorizontalOptions = LayoutOptions.Center,
-                            Source = new FontImageSource
+                            Children =
                             {
-                                FontFamily = nameof(MaterialDesignIcons),
-                                Color = Colors.White,
-                                Glyph = MaterialDesignIcons.TrashCanOutline,
-                                Size = 24
+                                new Label
+                                {
+                                    TextColor = Colors.White,
+                                    Text = "Swipe Text"
+                                },
+                                new Image
+                                {
+                                    VerticalOptions = LayoutOptions.Center,
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    Source = new FontImageSource
+                                    {
+                                        FontFamily = nameof(MaterialDesignIcons),
+                                        Color = Colors.White,
+                                        Glyph = MaterialDesignIcons.TrashCanOutline,
+                                        Size = 24
+                                    }
+                                }
                             }
-                        },
+                        }
+                        ,
                         BackgroundColor = Colors.Red,
                     }
                 ],
